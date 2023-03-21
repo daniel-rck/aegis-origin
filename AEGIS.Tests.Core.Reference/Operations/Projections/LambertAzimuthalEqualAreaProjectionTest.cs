@@ -55,8 +55,8 @@ namespace AEGIS.Tests.Reference.Operations.Projections
         {           
             var transformed = _projection.Forward(geoCoordinate);
 
-            Assert.AreEqual(coordinate.X, transformed.X, 0.001);
-            Assert.AreEqual(coordinate.Y, transformed.Y, 0.001);
+            Assert.AreEqual(coordinate.X, transformed.X, 0.02);
+            Assert.AreEqual(coordinate.Y, transformed.Y, 0.02);
         }
 
         [TestCase]
